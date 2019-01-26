@@ -1,7 +1,13 @@
-def my_select(collection)
- new_collection = []
- while collection.select == num.even?
- yield(new_collection)
- end
- new_collection
+def my_select(array)
+  i = 0
+  new_array = []
+  while i < array.size
+    if yield(array[i]) == true
+      new_array << array[i]
+    else
+      #nothing
+    end
+    i += 1
+  end
+  new_array
 end
