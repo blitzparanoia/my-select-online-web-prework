@@ -3,4 +3,5 @@ def my_select(collection)
  while collection.select == num.even?
  yield(new_collection)
  end
+ new_collection
 end
